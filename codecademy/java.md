@@ -1,1 +1,0 @@
-https://www.codecademy.com/learn/learn-java/modules/learn-java-hello-world/cheatsheet
