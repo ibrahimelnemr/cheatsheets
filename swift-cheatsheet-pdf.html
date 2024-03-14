@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheatsheet</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <style>
+        .title {
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+        .heading {
+            font-weight: bold;
+            color: #007bff;
+            /* font-size: 20px; */
+            font-size: xx-large;
+        }
+
+        .subheading {
+            font-weight: normal;
+            color: #6c757d;
+            font-size: x-large;
+            /* font-size: 15px; */
+        }
+
+        /* custom font size */
+
+        h1 {
+            font-size: xx-large;
+        }
+
+        h2 {
+            font-size: x-large;
+        }
+
+
+        a {
+            font-size: 10px;
+        }
+
+        pre code {
+            white-space: pre-wrap; /* Wrap lines */
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        code {
+            font-size: 7px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        code {
+            font-size: larger;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+
+        /* pre {
+            background-color: #f8f8f8;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        } */
+
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container py-4">
+
+        <h1 class="title">Table of Contents</h1>
+        <ul>
+            <li><a href="#variable-declaration" class="heading">Variable Declaration</a>
+                <ul>
+                    <li><a href="#declaring-variables" class="subheading">Declaring variables</a></li>
+                    <li><a href="#assigning-values-to-variables" class="subheading">Assigning values to variables</a>
+                    </li>
+                    <li><a href="#initializing-variables" class="subheading">Initializing variables</a></li>
+                    <li><a href="#declaring-multiple-variables-in-a-single-line" class="subheading">Declaring multiple
+                            variables in a
+                            single line</a></li>
+                    <li><a href="#using-constants" class="subheading">Using constants</a></li>
+                    <li><a href="#variable-scope" class="subheading">Variable scope</a></li>
+                    <li><a href="#variable-naming-conventions" class="subheading">Variable naming conventions</a></li>
+                    <li><a href="#implicit-vs-explicit-declaration" class="subheading">Implicit vs explicit
+                            declaration</a></li>
+                    <li><a href="#type-inference" class="subheading">Type inference</a></li>
+                </ul>
+            </li>
+            <li><a href="#printing-output" class="heading">Printing Output</a>
+                <ul>
+                    <li><a href="#printing-a-single-variable" class="subheading">Printing a single variable</a></li>
+                    <li><a href="#printing-multiple-variables" class="subheading">Printing multiple variables</a></li>
+                    <li><a href="#formatting-output" class="subheading">Formatting output</a></li>
+                    <li><a href="#printing-special-characters" class="subheading">Printing special characters</a></li>
+                </ul>
+            </li>
+            <li><a href="#string-methods" class="heading">String methods</a>
+                <ul>
+                    <li><a href="#string-concatenation" class="subheading">String concatenation</a></li>
+                    <li><a href="#string-slicing" class="subheading">String slicing</a></li>
+                    <li><a href="#searching-within-strings" class="subheading">Searching within strings</a></li>
+                    <li><a href="#replacing-substrings" class="subheading">Replacing substrings</a></li>
+                    <li><a href="#converting-case" class="subheading">Converting case</a></li>
+                    <li><a href="#stripping-whitespace" class="subheading">Stripping whitespace</a></li>
+                    <li><a href="#splitting-and-joining-strings" class="subheading">Splitting and joining strings</a>
+                    </li>
+                    <li><a href="#checking-for-substring-existence" class="subheading">Checking for substring
+                            existence</a></li>
+                    <li><a href="#string-formatting" class="subheading">String formatting</a></li>
+                    <li><a href="#string-manipulation-with-regular-expressions" class="subheading">String manipulation
+                            with regular
+                            expressions</a></li>
+                </ul>
+            </li>
+            <li><a href="#conditional-statements-and-control-flow-and-loops" class="heading">Conditional statements &
+                    Control flow &
+                    Loops</a>
+                <ul>
+                    <li><a href="#if-else-statements" class="subheading">if / else statements</a></li>
+                    <li><a href="#switch-case-statements" class="subheading">switch / case statements</a></li>
+                    <li><a href="#while-loops" class="subheading">while loops</a></li>
+                    <li><a href="#for-loops" class="subheading">for loops</a></li>
+                    <li><a href="#loop-control-statements" class="subheading">Loop control statements (break,
+                            continue)</a></li>
+                    <li><a href="#nested-loops" class="subheading">Nested loops</a></li>
+                    <li><a href="#looping-through-iterable-objects" class="subheading">Looping through iterable objects
+                            (lists, arrays,
+                            dictionaries, etc.)</a></li>
+                    <li><a href="#iterating-over-ranges" class="subheading">Iterating over ranges</a></li>
+                    <li><a href="#infinite-loops-and-how-to-handle-them" class="subheading">Infinite loops and how to
+                            handle them</a></li>
+                </ul>
+            </li>
+            <li><a href="#lists-arrays" class="heading">Lists / Arrays</a>
+                <ul>
+                    <li><a href="#creating-lists-arrays" class="subheading">Creating lists/arrays</a></li>
+                    <li><a href="#accessing-elements-by-index" class="subheading">Accessing elements by index</a></li>
+                    <li><a href="#modifying-elements" class="subheading">Modifying elements</a></li>
+                    <li><a href="#slicing-lists-arrays" class="subheading">Slicing lists/arrays</a></li>
+                    <li><a href="#concatenating-lists-arrays" class="subheading">Concatenating lists/arrays</a></li>
+                    <li><a href="#list-array-comprehension" class="subheading">List/array comprehension</a></li>
+                    <li><a href="#sorting-lists-arrays" class="subheading">Sorting lists/arrays</a></li>
+                    <li><a href="#reversing-lists-arrays" class="subheading">Reversing lists/arrays</a></li>
+                    <li><a href="#finding-elements-in-lists-arrays" class="subheading">Finding elements in
+                            lists/arrays</a></li>
+                    <li><a href="#removing-elements-from-lists-arrays" class="subheading">Removing elements from
+                            lists/arrays</a></li>
+                </ul>
+            </li>
+            <li><a href="#dictionaries-maps" class="heading">Dictionaries / Maps</a>
+                <ul>
+                    <li><a href="#creating-dictionaries-maps" class="subheading">Creating dictionaries/maps</a></li>
+                    <li><a href="#accessing-elements-by-key" class="subheading">Accessing elements by key</a></li>
+                    <li><a href="#modifying-elements-1" class="subheading">Modifying elements</a></li>
+                    <li><a href="#checking-for-key-existence" class="subheading">Checking for key existence</a></li>
+                    <li><a href="#dictionary-map-comprehension" class="subheading">Dictionary/map comprehension</a></li>
+                    <li><a href="#iterating-over-keys" class="subheading">Iterating over keys</a></li>
+                    <li><a href="#iterating-over-values" class="subheading">Iterating over values</a></li>
+                    <li><a href="#iterating-over-key-value-pairs" class="subheading">Iterating over key-value pairs</a>
+                    </li>
+                    <li><a href="#sorting-dictionaries-maps" class="subheading">Sorting dictionaries/maps</a></li>
+                    <li><a href="#merging-dictionaries-maps" class="subheading">Merging dictionaries/maps</a></li>
+                </ul>
+            </li>
+            <li><a href="#sets" class="heading">Sets</a>
+                <ul>
+                    <li><a href="#creating-sets" class="subheading">Creating sets</a></li>
+                    <li><a href="#adding-elements-to-sets" class="subheading">Adding elements to sets</a></li>
+                    <li><a href="#removing-elements-from-sets" class="subheading">Removing elements from sets</a></li>
+                    <li><a href="#checking-for-element-existence" class="subheading">Checking for element existence</a>
+                    </li>
+                    <li><a href="#set-operations" class="subheading">Set operations (union, intersection, difference,
+                            symmetric
+                            difference)</a></li>
+                    <li><a href="#set-comprehension" class="subheading">Set comprehension</a></li>
+                    <li><a href="#converting-lists-arrays-to-sets-and-vice-versa" class="subheading">Converting
+                            lists/arrays to sets and
+                            vice versa</a></li>
+                    <li><a href="#iterating-over-sets" class="subheading">Iterating over sets</a></li>
+                    <li><a href="#checking-for-subsets-and-supersets" class="subheading">Checking for subsets and
+                            supersets</a></li>
+                </ul>
+            </li>
+            <li><a href="#exceptions-try-catch" class="heading">Exceptions / try/catch</a>
+                <ul>
+                    <li><a href="#handling-exceptions-with-try-catch-blocks" class="subheading">Handling exceptions with
+                            try/catch
+                            blocks</a></li>
+                    <li><a href="#catching-specific-exceptions" class="subheading">Catching specific exceptions</a></li>
+                    <li><a href="#raising-exceptions" class="subheading">Raising exceptions</a></li>
+                    <li><a href="#cleaning-up-with-finally-block" class="subheading">Cleaning up with finally block</a>
+                    </li>
+                    <li><a href="#exception-chaining" class="subheading">Exception chaining</a></li>
+                </ul>
+            </li>
+            <li><a href="#functions" class="heading">Functions</a>
+                <ul>
+                    <li><a href="#defining-functions" class="subheading">Defining functions</a></li>
+                    <li><a href="#function-arguments" class="subheading">Function arguments (positional, keyword,
+                            default values)</a></li>
+                    <li><a href="#returning-values-from-functions" class="subheading">Returning values from
+                            functions</a></li>
+                    <li><a href="#function-overloading" class="subheading">Function overloading</a></li>
+                    <li><a href="#lambda-functions" class="subheading">Lambda functions</a></li>
+                    <li><a href="#recursion" class="subheading">Recursion</a></li>
+                    <li><a href="#generators-and-iterators" class="subheading">Generators and iterators</a></li>
+                    <li><a href="#decorators" class="subheading">Decorators</a></li>
+                    <li><a href="#higher-order-functions" class="subheading">Higher-order functions</a></li>
+                    <li><a href="#function-documentation-and-comments" class="subheading">Function documentation and
+                            comments</a></li>
+                </ul>
+            </li>
+            <li><a href="#oop" class="heading">OOP</a>
+                <ul>
+                    <li><a href="#class-creation-syntax" class="subheading">Class creation syntax</a></li>
+                    <li><a href="#creating-instances-of-a-class" class="subheading">Creating instances of a class</a>
+                    </li>
+                    <li><a href="#class-attributes-vs-instance-attributes" class="subheading">Class attributes vs
+                            instance attributes</a>
+                    </li>
+                    <li><a href="#constructor-method-init-method" class="subheading">Constructor method (init
+                            method)</a></li>
+                    <li><a href="#instance-methods-vs-static-methods-vs-class-methods" class="subheading">Instance
+                            methods vs static
+                            methods vs class methods</a></li>
+                    <li><a href="#encapsulation" class="subheading">Encapsulation (public vs private members)</a></li>
+                    <li><a href="#inheritance" class="subheading">Inheritance</a></li>
+                    <li><a href="#polymorphism" class="subheading">Polymorphism (method overriding, method
+                            overloading)</a></li>
+                    <li><a href="#composition-vs-inheritance" class="subheading">Composition vs inheritance</a></li>
+                    <li><a href="#abstract-classes-interfaces" class="subheading">Abstract classes/interfaces</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <h1 id="variable-declaration">Variable Declaration</h1>
+
+        <h2 id="declaring-variables">Declaring variables</h2>
+        <pre><code class="swift">
+var myVar: Int
+var myString: String
+let myConst: Double
+</code></pre>
+
+        <h2 id="assigning-values-to-variables">Assigning values to variables</h2>
+        <pre><code class="swift">
+var myVar = 10
+var myString = "Hello, World!"
+let myConst = 3.14
+</code></pre>
+
+        <h2 id="initializing-variables">Initializing variables</h2>
+        <pre><code class="swift">
+var myVar: Int = 5
+var myString: String = "Swift"
+let myConst: Double = 2.71828
+</code></pre>
+
+        <h2 id="declaring-multiple-variables-in-a-single-line">Declaring multiple variables in a single line</h2>
+        <pre><code class="swift">
+var x = 1, y = 2, z = 3
+</code></pre>
+
+        <h2 id="using-constants">Using constants</h2>
+        <pre><code class="swift">
+let pi = 3.14159
+</code></pre>
+
+        <h2 id="variable-scope">Variable scope</h2>
+        <pre><code class="swift">
+var globalVar = 10
+
+func myFunction() {
+    var localVar = 5
+    print(globalVar) // Accessible
+    print(localVar)  // Accessible
+}
+
+print(globalVar) // Accessible
+print(localVar)  // Error: localVar is not accessible outside myFunction
+</code></pre>
+
+        <h2 id="variable-naming-conventions">Variable naming conventions</h2>
+        <pre><code class="swift">
+var my_variable: Int
+var camelCaseVariable: String
+</code></pre>
+
+        <h2 id="implicit-vs-explicit-declaration">Implicit vs explicit declaration</h2>
+        <pre><code class="swift">
+var implicitVar = 10
+var explicitVar: Int = 10
+</code></pre>
+
+        <h2 id="type-inference">Type inference</h2>
+        <pre><code class="swift">
+var myVar = 10 // Inferred as Int
+var myString = "Swift" // Inferred as String
+</code></pre>
+
+        <h1 id="printing-output">Printing Output</h1>
+
+        <h2 id="printing-a-single-variable">Printing a single variable</h2>
+        <pre><code class="swift">
+var name = "John"
+print(name)
+</code></pre>
+
+        <h2 id="printing-multiple-variables">Printing multiple variables</h2>
+        <pre><code class="swift">
+var age = 30
+var height = 6.2
+print("Age: \(age), Height: \(height)")
+</code></pre>
+
+        <h2 id="formatting-output">Formatting output</h2>
+        <pre><code class="swift">
+var num = 3.14159
+print(String(format: "%.2f", num))
+</code></pre>
+
+        <h2 id="printing-special-characters">Printing special characters</h2>
+        <pre><code class="swift">
+print("This is a tab: \t and this is a newline: \n")
+</code></pre>
+
+
+
+        <h1 id="string-methods">String methods</h1>
+
+        <h2 id="string-concatenation">String concatenation</h2>
+        <pre><code class="swift">
+var str1 = "Hello"
+var str2 = "World"
+var combinedStr = str1 + " " + str2
+</code></pre>
+
+        <h2 id="string-slicing">String slicing</h2>
+        <pre><code class="swift">
+var str = "Hello, World!"
+var slicedStr = str[..<5] // Output: "Hello"
+</code></pre>
+
+        <h2 id="searching-within-strings">Searching within strings</h2>
+        <pre><code class="swift">
+var str = "Hello, World!"
+if str.contains("Hello") {
+    print("Found")
+}
+</code></pre>
+
+        <h2 id="replacing-substrings">Replacing substrings</h2>
+        <pre><code class="swift">
+var str = "Hello, World!"
+var replacedStr = str.replacingOccurrences(of: "World", with: "Swift")
+</code></pre>
+
+        <h2 id="converting-case">Converting case</h2>
+        <pre><code class="swift">
+var str = "hello"
+var uppercasedStr = str.uppercased()
+var lowercasedStr = str.lowercased()
+</code></pre>
+
+        <h2 id="stripping-whitespace">Stripping whitespace</h2>
+        <pre><code class="swift">
+var str = "  Hello, World!  "
+var trimmedStr = str.trimmingCharacters(in: .whitespacesAndNewlines)
+</code></pre>
+
+        <h2 id="splitting-and-joining-strings">Splitting and joining strings</h2>
+        <pre><code class="swift">
+var str = "Apple,Orange,Banana"
+var splittedStr = str.split(separator: ",")
+var joinedStr = splittedStr.joined(separator: " ")
+</code></pre>
+
+        <h2 id="checking-for-substring-existence">Checking for substring existence</h2>
+        <pre><code class="swift">
+var str = "Hello, World!"
+if let range = str.range(of: "Hello") {
+   
+   print("Substring found")
+}
+</code></pre>
+        <h2 id="string-formatting">String formatting</h2>
+        <pre><code class="swift">
+var name = "John"
+var age = 30
+var formattedString = String(format: "Name: %@, Age: %d", name, age)
+print(formattedString)
+</code></pre>
+        <h2 id="string-manipulation-with-regular-expressions">String manipulation with regular expressions</h2>
+        <pre><code class="swift">
+import Foundation
+var str = "Hello, World!"
+var pattern = "Hello"
+var regex = try! NSRegularExpression(pattern: pattern)
+if let match = regex.firstMatch(in: str, range: NSRange(location: 0, length: str.utf16.count)) {
+print("Match found")
+}
+</code></pre>
+
+        <h1 id="conditional-statements-and-control-flow-and-loops">Conditional statements & Control flow & Loops</h1>
+        <h2 id="if-else-statements">if / else statements</h2>
+        <pre><code class="swift">
+var num = 10
+if num > 0 {
+    print("Positive")
+} else if num < 0 {
+    print("Negative")
+} else {
+    print("Zero")
+}
+</code></pre>
+        <h2 id="switch-case-statements">switch / case statements</h2>
+        <pre><code class="swift">
+var grade = "A"
+switch grade {
+case "A":
+    print("Excellent")
+case "B":
+    print("Good")
+default:
+    print("Pass")
+}
+</code></pre>
+        <h2 id="while-loops">while loops</h2>
+        <pre><code class="swift">
+var i = 0
+while i < 5 {
+    print(i)
+    i += 1
+}
+</code></pre>
+        <h2 id="for-loops">for loops</h2>
+        <pre><code class="swift">
+for i in 0..<5 {
+    print(i)
+}
+</code></pre>
+        <h2 id="loop-control-statements">Loop control statements (break, continue)</h2>
+        <pre><code class="swift">
+for i in 0..<5 {
+    if i == 3 {
+        break
+    }
+    print(i)
+}
+</code></pre>
+        <h2 id="nested-loops">Nested loops</h2>
+        <pre><code class="swift">
+for i in 0..<3 {
+    for j in 0..<3 {
+        print(i * j)
+    }
+}
+</code></pre>
+        <h2 id="looping-through-iterable-objects">Looping through iterable objects (lists, arrays, dictionaries, etc.)
+        </h2>
+        <pre><code class="swift">
+var nums = [1, 2, 3, 4, 5]
+for num in nums {
+    print(num)
+}
+</code></pre>
+        <h2 id="iterating-over-ranges">Iterating over ranges</h2>
+        <pre><code class="swift">
+for i in 1...5 {
+    print(i)
+}
+</code></pre>
+        <h2 id="infinite-loops-and-how-to-handle-them">Infinite loops and how to handle them</h2>
+        <pre><code class="swift">
+var i = 0
+while true {
+    print(i)
+    if i == 10 {
+        break
+    }
+    i += 1
+}
+</code></pre>
+        <h1 id="lists-arrays">Lists / Arrays</h1>
+        <h2 id="creating-lists-arrays">Creating lists/arrays</h2>
+        <pre><code class="swift">
+var nums = [1, 2, 3, 4, 5]
+</code></pre>
+        <h2 id="accessing-elements-by-index">Accessing elements by index</h2>
+        <pre><code class="swift">
+var nums = [1, 2, 3, 4, 5]
+print(nums[0]) // Output: 1
+</code></pre>
+        <h2 id="modifying-elements">Modifying elements</h2>
+        <pre><code class="swift">
+var nums = [1, 2, 3, 4, 5]
+nums[0] = 10
+print(nums) // Output: [10, 2, 3, 4, 5]
+</code></pre>
+        <h2 id="slicing-lists-arrays">Slicing lists/arrays</h2>
+        <pre><code class="swift">
+var nums = [1, 2, 3, 4, 5]
+var slicedNums = nums[1..<4]
+print(slicedNums) // Output: [2, 3, 4]
+</code></pre>
+        <h2 id="concatenating-lists-arrays">Concatenating lists/arrays</h2>
+        <pre><code class="swift">
+var nums1 = [1, 2, 3]
+var nums2 = [4, 5, 6]
+var combinedNums = nums1 + nums2
+print(combinedNums) // Output: [1, 2, 3, 4, 5, 6]
+</code></pre>
+        <h2 id="list-array-comprehension">List/array comprehension</h2>
+        <pre><code class="swift">
+var nums = [1, 2, 3, 4, 5]
+var squaredNums = [num * num for num in nums]
+print(squaredNums) // Output: [1, 4, 9, 16, 25]
+</code></pre>
+        <h2 id="sorting-lists-arrays">Sorting lists/arrays</h2>
+        <pre><code class="swift">
+var nums = [5, 3, 1, 4, 2]
+nums.sort()
+print(nums) // Output: [1, 2, 3, 4, 5]
+</code></pre>
+        <h2 id="reversing-lists-arrays">Reversing lists/arrays</h2>
+        <pre><code class="swift">
+var nums = [1, 2, 3, 4, 5]
+nums.reverse()
+print(nums) // Output: [5, 4, 3, 2, 1]
+</code></pre>
+        <h2 id="finding-elements-in-lists-arrays">Finding elements in lists/arrays</h2>
+        <pre><code class="swift">
+var nums = [1, 2, 3, 4, 5]
+if nums.contains(3) {
+    print("Element found")
+}
+</code></pre>
+        <h2 id="removing-elements-from-lists-arrays">Removing elements from lists/arrays</h2>
+        <pre><code class="swift">
+var nums = [1, 2, 3, 4, 5]
+nums.remove(at: 2)
+print(nums) // Output: [1, 2, 4, 5]
+</code></pre>
+        <h1 id="dictionaries-maps">Dictionaries / Maps</h1>
+        <h2 id="creating-dictionaries-maps">Creating dictionaries/maps</h2>
+        <pre><code class="swift">
+var ages = ["John": 30, "Jane": 25, "Doe": 40]
+</code></pre>
+        <h2 id="accessing-elements-by-key">Accessing elements by key</h2>
+        <pre><code class="swift">
+var ages = ["John": 30, "Jane": 25, "Doe": 40]
+print(ages["John"]!) // Output: 30
+</code></pre>
+        <h2 id="modifying-elements-1">Modifying elements</h2>
+        <pre><code class="swift">
+var ages = ["John": 30, "Jane": 25, "Doe": 40]
+ages["John"] = 35
+print(ages) // Output: ["John": 35, "Jane": 25, "Doe": 40]
+</code></pre>
+        <h2 id="checking-for-key-existence">Checking for key existence</h2>
+        <pre><code class="swift">
+var ages = ["John": 30, "Jane": 25, "Doe": 40]
+if let age = ages["John"] {
+    print("Age found: \(age)")
+}
+</code></pre>
+        <h2 id="dictionary-map-comprehension">Dictionary/map comprehension</h2>
+        <pre><code class="swift">
+var nums = [1, 2, 3, 4, 5]
+var squaredDict = [num: num * num for num in nums]
+print(squaredDict) // Output: {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+</code></pre>
+        <h2 id="iterating-over-keys">Iterating over keys</h2>
+        <pre><code class="swift">
+var ages = ["John": 30, "Jane": 25, "Doe": 40]
+for name in ages.keys {
+    print(name)
+}
+</code></pre>
+        <h2 id="iterating-over-values">Iterating over values</h2>
+        <pre><code class="swift">
+var ages = ["John": 30, "Jane": 25, "Doe": 40]
+for age in ages.values {
+    print(age)
+}
+</code></pre>
+        <h2 id="iterating-over-key-value-pairs">Iterating over key-value pairs</h2>
+        <pre><code class="swift">
+var ages = ["John": 30, "Jane": 25, "Doe": 40]
+for (name, age) in ages {
+    print("\(name) is \(age) years old")
+}
+</code></pre>
+        <h2 id="sorting-dictionaries-maps">Sorting dictionaries/maps</h2>
+        <pre><code class="swift">
+var ages = ["John": 30, "Jane": 25, "Doe": 40]
+var sortedAges = ages.sorted { $0.key < $1.key }
+print(sortedAges) // Output: [("Doe", 40), ("Jane", 25), ("John", 30)]
+</code></pre>
+        <h2 id="merging-dictionaries-maps">Merging dictionaries/maps</h2>
+        <pre><code class="swift">
+var dict1: [String: Int] = ["John": 30, "Jane": 25]
+var dict2: [String: Int] = ["Doe": 40, "Smith": 35]
+var mergedDict = dict1.merging(dict2) { (current, _) in current }
+print(mergedDict) // Output: ["John": 30, "Jane": 25, "Doe": 40, "Smith": 35]
+</code></pre>
+        <h1 id="sets">Sets</h1>
+        <h2 id="creating-sets">Creating sets</h2>
+        <pre><code class="swift">
+var mySet: Set<Int> = [1, 2, 3, 4, 5]
+</code></pre>
+        <h2 id="adding-elements-to-sets">Adding elements to sets</h2>
+        <pre><code class="swift">
+var mySet: Set<Int> = [1, 2, 3]
+mySet.insert(4)
+print(mySet) // Output: [1, 2, 3, 4]
+</code></pre>
+        <h2 id="removing-elements-from-sets">Removing elements from sets</h2>
+        <pre><code class="swift">
+var mySet: Set<Int> = [1, 2, 3]
+mySet.remove(2)
+print(mySet) // Output: [1, 3]
+</code></pre>
+        <h2 id="checking-for-element-existence">Checking for element existence</h2>
+        <pre><code class="swift">
+var mySet: Set<Int> = [1, 2, 3]
+if mySet.contains(2) {
+    print("Element found")
+}
+</code></pre>
+        <h2 id="set-operations">Set operations (union, intersection, difference, symmetric difference)</h2>
+
+
+        <pre><code class="swift">
+var set1: Set<Int> = [1, 2, 3]
+var set2: Set<Int> = [3, 4, 5]
+var unionSet = set1.union(set2) // Output: [1, 2, 3, 4, 5]
+var intersectionSet = set1.intersection(set2) // Output: [3]
+var differenceSet = set1.subtracting(set2) // Output: [1, 2]
+var symmetricDifferenceSet = set1.symmetricDifference(set2) // Output: [1, 2, 4, 5]
+</code></pre>
+        <h2 id="set-comprehension">Set comprehension</h2>
+        <pre><code class="swift">
+var nums = [1, 2, 3, 4, 5]
+var mySet: Set<Int> = [num * num for num in nums]
+print(mySet) // Output: [1, 4, 9, 16, 25]
+</code></pre>
+        <h2 id="converting-lists-arrays-to-sets-and-vice-versa">Converting lists/arrays to sets and vice versa</h2>
+        <pre><code class="swift">
+var myList = [1, 2, 3, 4, 5]
+var mySet = Set(myList)
+var myArray = Array(mySet)
+</code></pre>
+        <h2 id="iterating-over-sets">Iterating over sets</h2>
+        <pre><code class="swift">
+var mySet: Set<String> = ["Apple", "Orange", "Banana"]
+for item in mySet {
+    print(item)
+}
+</code></pre>
+        <h2 id="checking-for-subsets-and-supersets">Checking for subsets and supersets</h2>
+        <pre><code class="swift">
+var set1: Set<Int> = [1, 2, 3, 4]
+var set2: Set<Int> = [2, 3]
+if set2.isSubset(of: set1) {
+    print("set2 is a subset of set1")
+}
+if set1.isSuperset(of: set2) {
+    print("set1 is a superset of set2")
+}
+</code></pre>
+        <h1 id="exceptions-try-catch">Exceptions / try/catch</h1>
+        <h2 id="handling-exceptions-with-try-catch-blocks">Handling exceptions with try/catch blocks</h2>
+        <pre><code class="swift">
+do {
+    // Code that might throw an exception
+    let result = try someFunction()
+    print(result)
+} catch {
+    print("An error occurred: \(error)")
+}
+</code></pre>
+        <h2 id="catching-specific-exceptions">Catching specific exceptions</h2>
+        <pre><code class="swift">
+do {
+    let result = try someFunction()
+    print(result)
+} catch SomeError.invalidInput {
+    print("Invalid input error occurred")
+} catch SomeError.runtimeError(let message) {
+    print("Runtime error occurred: \(message)")
+} catch {
+    print("An error occurred: \(error)")
+}
+</code></pre>
+        <h2 id="raising-exceptions">Raising exceptions</h2>
+        <pre><code class="swift">
+enum MyError: Error {
+    case runtimeError(String)
+}
+func someFunction() throws -> Int {
+throw MyError.runtimeError("Something went wrong")
+}
+</code></pre>
+
+        <h2 id="cleaning-up-with-finally-block">Cleaning up with finally block</h2>
+        <pre><code class="swift">
+do {
+    let result = try someFunction()
+    print(result)
+} catch {
+    print("An error occurred: \(error)")
+} finally {
+    // Code to be executed regardless of whether an exception was thrown
+}
+</code></pre>
+        <h2 id="exception-chaining">Exception chaining</h2>
+        <pre><code class="swift">
+enum MyError: Error {
+    case runtimeError(String)
+}
+
+func someFunction() throws {
+    do {
+        try someOtherFunction()
+    } catch {
+        throw MyError.runtimeError("Failed in someOtherFunction: \(error)")
+    }
+}
+
+func someOtherFunction() throws {
+    // Code that might throw an exception
+}
+</code></pre>
+
+
+
+
+
+        <h1 id="functions">Functions</h1>
+
+        <h2 id="defining-functions">Defining functions</h2>
+        <pre><code class="swift">
+func greet(name: String) {
+    print("Hello, \(name)!")
+}
+</code></pre>
+
+        <h2 id="function-arguments">Function arguments (positional, keyword, default values)</h2>
+        <pre><code class="swift">
+func greet(name: String, greeting: String = "Hello") {
+    print("\(greeting), \(name)!")
+}
+
+greet(name: "John") // Output: "Hello, John!"
+greet(name: "Jane", greeting: "Hi") // Output: "Hi, Jane!"
+</code></pre>
+
+        <h2 id="returning-values-from-functions">Returning values from functions</h2>
+        <pre><code class="swift">
+func add(a: Int, b: Int) -> Int {
+    return a + b
+}
+
+let sum = add(a: 3, b: 5)
+print(sum) // Output: 8
+</code></pre>
+
+        <h2 id="function-overloading">Function overloading</h2>
+        <pre><code class="swift">
+func add(a: Int, b: Int) -> Int {
+    return a + b
+}
+
+func add(a: Double, b: Double) -> Double {
+    return a + b
+}
+</code></pre>
+
+        <h2 id="lambda-functions">Lambda functions</h2>
+        <pre><code class="swift">
+let add = { (a: Int, b: Int) -> Int in
+    return a + b
+}
+
+let result = add(3, 5)
+print(result) // Output: 8
+</code></pre>
+
+        <h2 id="recursion">Recursion</h2>
+        <pre><code class="swift">
+func factorial(n: Int) -> Int {
+    if n == 0 {
+        return 1
+    }
+    return n * factorial(n: n - 1)
+}
+
+let fact = factorial(n: 5)
+print(fact) // Output: 120
+</code></pre>
+
+        <h2 id="generators-and-iterators">Generators and iterators</h2>
+        <pre><code class="swift">
+// Generator example
+func fibonacci() -> AnyIterator<Int> {
+    var a = 0
+    var b = 1
+    return AnyIterator {
+        defer { (a, b) = (b, a + b) }
+        return a
+    }
+}
+
+for fib in fibonacci().prefix(10) {
+    print(fib)
+}
+
+// Iterator example
+struct Countdown: Sequence, IteratorProtocol {
+    var count: Int
+    
+    mutating func next() -> Int? {
+        if count == 0 {
+            return nil
+        } else {
+            defer { count -= 1 }
+            return count
+        }
+    }
+}
+
+var countdown = Countdown(count: 5)
+for num in countdown {
+    print(num)
+}
+</code></pre>
+
+        <h2 id="decorators">Decorators</h2>
+        <pre><code class="swift">
+// Decorator example
+func logged(originalFunction: () -> ()) {
+    print("Calling function...")
+    originalFunction()
+}
+
+func myFunction() {
+    print("Executing myFunction...")
+}
+
+logged(originalFunction: myFunction)
+</code></pre>
+
+        <h2 id="higher-order-functions">Higher-order functions</h2>
+        <pre><code class="swift">
+// Higher-order function example
+func applyOperation(a: Int, b: Int, operation: (Int, Int) -> Int) -> Int {
+    return operation(a, b)
+}
+
+let addition = applyOperation(a: 3, b: 5, operation: { $0 + $1 })
+let multiplication = applyOperation(a: 3, b: 5, operation: { $0 * $1 })
+
+print(addition) // Output: 8
+print(multiplication) // Output: 15
+</code></pre>
+
+        <h2 id="function-documentation-and-comments">Function documentation and comments</h2>
+        <pre><code class="swift">
+/// This function greets a person.
+/// - Parameters:
+///   - name: The name of the person to greet.
+///   - greeting: The greeting message (default is "Hello").
+func greet(name: String, greeting: String = "Hello") {
+    print("\(greeting), \(name)!")
+}
+</code></pre>
+
+        <h1 id="oop">OOP</h1>
+
+        <h2 id="class-creation-syntax">Class creation syntax</h2>
+        <pre><code class="swift">
+class Person {
+    var name: String
+    var age: Int
+    
+    init(name: String, age: Int) {
+        self.name = name
+        self.age = age
+    }
+    
+    func greet() {
+        print("Hello, my name is \(name) and I am \(age) years old.")
+    }
+}
+</code></pre>
+
+        <h2 id="creating-instances-of-a-class">Creating instances of a class</h2>
+        <pre><code class="swift">
+var person = Person(name: "John", age: 30)
+person.greet() // Output: "Hello, my name is John and I am 30 years old."
+</code></pre>
+
+        <h2 id="class-attributes-vs-instance-attributes">Class attributes vs instance attributes</h2>
+        <pre><code class="swift">
+class MyClass {
+    static var classAttribute = "Class attribute"
+    var instanceAttribute = "Instance attribute"
+}
+
+print(MyClass.classAttribute) // Output: "Class attribute"
+
+var obj = MyClass()
+print(obj.instanceAttribute) // Output: "Instance attribute"
+</code></pre>
+
+        <h2 id="constructor-method-init-method">Constructor method (init method)</h2>
+        <pre><code class="swift">
+class Person {
+    var name: String
+    var age: Int
+    
+    init(name: String, age: Int) {
+        self.name = name
+        self.age = age
+    }
+}
+</code></pre>
+
+        <h2 id="instance-methods-vs-static-methods-vs-class-methods">Instance methods vs static methods vs class methods
+        </h2>
+        <pre><code class="swift">
+class MyClass {
+    var name: String
+    
+    init(name: String) {
+        self.name = name
+    }
+    
+    func instanceMethod() {
+        print("Instance method called")
+    }
+    
+    static func staticMethod() {
+        print("Static method called")
+    }
+    
+    class func classMethod() {
+        print("Class method called")
+    }
+}
+
+var obj = MyClass(name: "Object")
+obj.instanceMethod()
+MyClass.staticMethod()
+MyClass.classMethod()
+</code></pre>
+
+        <h2 id="encapsulation-public-vs-private-members">Encapsulation (public vs private members)</h2>
+        <pre><code class="swift">
+class Person {
+    private var name: String
+    var age: Int
+    
+    init(name: String, age: Int) {
+        self.name = name
+        self.age = age
+    }
+    
+    func greet() {
+        print("Hello, my name is \(name) and I am \(age) years old.")
+    }
+}
+
+var person = Person(name: "John", age: 30)
+person.greet() // Output: "Hello, my name is John and I am 30 years old."
+// print(person.name) // Error: 'name' is inaccessible due to 'private' protection level
+</code></pre>
+
+        <h2 id="inheritance">Inheritance</h2>
+        <pre><code class="swift">
+class Animal {
+    var name: String
+    
+    init(name: String) {
+        self.name = name
+    }
+    
+    func makeSound() {
+        print("Animal makes a sound")
+    }
+}
+
+class Dog: Animal {
+    override func makeSound() {
+        print("Dog barks")
+    }
+}
+
+var dog = Dog(name: "Buddy")
+dog.makeSound() // Output: "Dog barks"
+</code></pre>
+
+        <h2 id="polymorphism-method-overriding-method-overloading">Polymorphism (method overriding, method overloading)
+        </h2>
+        <pre><code class="swift">
+class Animal {
+    func makeSound() {
+        print("Animal makes a sound")
+    }
+}
+
+class Dog: Animal {
+    override func makeSound() {
+        print("Dog barks")
+    }
+    
+    func makeSound(volume: Int) {
+        print("Dog barks with volume \(volume)")
+    }
+}
+
+var dog = Dog()
+dog.makeSound() // Output: "Dog barks"
+dog.makeSound(volume: 5) // Output: "Dog barks with volume 5"
+</code></pre>
+
+        <h2 id="composition-vs-inheritance">Composition vs inheritance</h2>
+        <pre><code class="swift">
+// Composition example
+class Engine {
+    func start() {
+        print("Engine started")
+    }
+}
+
+class Car {
+    var engine = Engine()
+    
+    func start() {
+        engine.start()
+        print("Car started")
+    }
+}
+
+var car = Car()
+car.start() // Output: "Engine started" followed by "Car started"
+</code></pre>
+
+        <h2 id="abstract-classes-interfaces">Abstract classes/interfaces</h2>
+
+        <pre><code class="swift">
+protocol Drawable {
+    func draw()
+}
+
+class Circle: Drawable {
+    func draw() {
+        print("Drawing circle")
+    }
+}
+
+class Rectangle: Drawable {
+    func draw() {
+        print("Drawing rectangle")
+    }
+}
+
+var circle = Circle()
+var rectangle = Rectangle()
+circle.draw() // Output: "Drawing circle"
+rectangle.draw() // Output: "Drawing rectangle"
+</code></pre>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script> -->
+</body>
+
+</html>
