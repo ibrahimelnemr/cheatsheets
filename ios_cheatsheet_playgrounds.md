@@ -254,8 +254,6 @@ struct ConditionalCircle: View {
 
 ```swift
 import SwiftUI
-//#-learning-code-snippet(toggleExperiment)
-
 
 struct Bindings: View {
 
@@ -413,7 +411,6 @@ struct NavigationSplitViewExperiment_Previews: PreviewProvider {
 ```swift
 import SwiftUI
 import Guide
-//#-learning-code-snippet(myApp)
 
 @main
 struct MyApp: App {
@@ -437,9 +434,6 @@ import SwiftUI
 import Guide
 
 struct ContentView: View {
-    //#-learning-code-snippet(usingCreatureZoo)
-    
-    //#-learning-code-snippet(declareEnvironmentObject)
 
     var body: some View {
         SPCAssessableGroup(view: self) {
@@ -454,11 +448,7 @@ struct ContentView: View {
                         Text("make some creatures dance around")
                     }
                 }
-                //#-learning-code-snippet(createAList)
-                //#-learning-code-snippet(deleteACreature)
-                                
             }
-            //#-learning-code-snippet(addToolBarContentView)
         }
     }
 }
@@ -518,18 +508,13 @@ struct ContentView: View {
                 ForEach(data.creatures) { creature in 
                     CreatureRow(creature: creature)
                 }
-                
-                /*#-code-walkthrough(forEach.id)*/
 //                ForEach(data.creatures) { creature in 
-//                    /*#-code-walkthrough(forEach.id)*/
 //                    HStack { 
 //                        Text(creature.name)
 //                            .font(.title)
 //                        Spacer()
 //                        Text(creature.emoji)
-//                        /*#-code-walkthrough(resizableFont)*/
 //                            .resizableFont()
-//                        /*#-code-walkthrough(resizableFont)*/
 //                            .frame(minWidth: 125)
 //                    }
 //                }
@@ -548,12 +533,9 @@ import SwiftUI
 import Guide
 
 @main
-/*#-code-walkthrough(myApp.appProtocol)*/
 struct MyApp: App {
-    /*#-code-walkthrough(myApp.appProtocol)*/
     @StateObject var data = CreatureZoo()
     
-    /*#-code-walkthrough(myApp.body)*/
     var body: some Scene {
         SPCAssessableWindowGroup(app: self, assessmentCandidates: [CreatureZoo()]) {
             NavigationStack {
@@ -561,11 +543,8 @@ struct MyApp: App {
                     .navigationTitle("My Creatures")                
             }
             .environmentObject(data)
-            /*#-code-walkthrough(myApp.contentView)*/
-
         }
     }
-    /*#-code-walkthrough(myApp.body)*/
 }
 
 ```
@@ -646,7 +625,6 @@ struct CreatureEditor: View {
                 ToolbarItem { 
                     Button("Add") { 
                         data.creatures.append(newCreature)
-                        //#-learning-code-snippet(addCreatureToCreatureZoo)
                         dismiss()
                     }
                 }
@@ -698,17 +676,13 @@ struct ContentView: View {
 
                 }
                 
-                /*#-code-walkthrough(forEach.id)*/
 //                ForEach(data.creatures) { creature in 
-//                    /*#-code-walkthrough(forEach.id)*/
 //                    HStack { 
 //                        Text(creature.name)
 //                            .font(.title)
 //                        Spacer()
 //                        Text(creature.emoji)
-//                        /*#-code-walkthrough(resizableFont)*/
 //                            .resizableFont()
-//                        /*#-code-walkthrough(resizableFont)*/
 //                            .frame(minWidth: 125)
 //                    }
 //                }
@@ -815,15 +789,12 @@ struct ContentView: View {
                 }
                 
 //                ForEach(data.creatures) { creature in 
-//                    /*#-code-walkthrough(forEach.id)*/
 //                    HStack { 
 //                        Text(creature.name)
 //                            .font(.title)
 //                        Spacer()
 //                        Text(creature.emoji)
-//                        /*#-code-walkthrough(resizableFont)*/
 //                            .resizableFont()
-//                        /*#-code-walkthrough(resizableFont)*/
 //                            .frame(minWidth: 125)
 //                    }
 //                }
@@ -1442,11 +1413,6 @@ struct StoryEditor_Previews: PreviewProvider {
 ## TestView - Playgrounds Keep Going with Apps - Files
 
 ```swift
-//
-//  SwiftUIView.swift
-//  
-//
-//
 
 import SwiftUI
 
@@ -1475,5 +1441,4 @@ struct TestView_Previews: PreviewProvider {
         TestView()
     }
 }
-
 ```
