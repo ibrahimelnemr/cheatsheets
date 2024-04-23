@@ -5,6 +5,68 @@
 # Learn Swift Cheatsheet
 https://www.codecademy.com/learn/learn-swift/modules/learn-swift-hello-world/cheatsheet
 
+## [Hello World](#hello-world---learn-swift)
+
+## [Variables](#variables---learn-swift)
+[Constants](#constants)
+[Types](#types)
+[String Interpolation](#string-interpolation)
+
+## [Conditionals & Logic](#conditionals--logic---learn-swift)
+[If statement](#if-statement)
+[Ternary conditional operator](#ternary-conditional-operator)
+[Switch statement](#switch-statement)
+[Switch statement compound cases](#switch-statement-compound-cases)
+[Switch statement where clause](#switch-statement-where-clause)
+
+## [Loops](#loops---learn-swift)
+[ranges](#ranges)
+[stride function](#stride-function)
+[for in loop](#for-in-loop)
+[continue](#continue-keyword)
+[break](#break-keyword)
+[using underscore](#using-underscore)
+[while loop](#while-loop)
+
+
+## [Arrays and Sets](#arrays-and-sets---learn-swift)
+### [array](#array)
+### [initialize with array literal](#initialize-with-array-literal)
+### [index](#index)
+### [.count property](#count-property)
+### [.append method](#append-method-and--operator)
+### [insert and remove](#insert-and-remove-methods)
+### [iterating over an array](#iterating-over-an-array)
+### [swift sets](#swift-sets)
+### [empty sets](#empty-sets)
+### [populated sets](#populated-sets)
+### [insert](#insert)
+### [remove and removeAll](#remove-and-removeall-methods)
+### [contains](#contains)
+### [iterating over a set](#iterating-over-a-set)
+### .isEmpty Property
+### .count Property
+### .intersection() Operation
+### .union() Operation
+### .symmetricDifference() Operation
+### .subtracting() Operation
+
+## [Dictionaries](#dictionaries---learn-swift)
+
+## [Functions](#functions---learn-swift)
+
+## [Structures](#structures---learn-swift)
+
+## [Classes](#classes---learn-swift)
+
+# Learn Intermediate Swift Cheatsheet
+
+## [Enumerations](#enumerations---learn-intermediate-swift)
+## [Optionals](#optionals---learn-intermediate-swift)
+## [Closures](#closures---learn-intermediate-swift)
+## [Properties and Access Control](#properties-and-access-control---learn-intermediate-swift)
+
+## Hello World - Learn Swift
 ```swift
 print("Hello, world!")
 ```
@@ -21,13 +83,13 @@ None of it is going to run!
 */
 ```
 
-## Variables
+### Variables - Learn Swift
 
 ```swift
 var score = 0
 ```
 
-## Constants
+### Constants
 
 ```swift
 let pi = 3.14
@@ -53,8 +115,9 @@ print("I have \(apples) apples!")
 
 // Prints: I have 6 apples!
 ```
+## Conditionals & Logic - Learn Swift
 
-## if Statement
+### if Statement
 
 ```swift
 var weather = "rainy" 
@@ -157,7 +220,9 @@ switch num {
 // Prints: 7 is odd
 ```
 
-## Ranges
+## Loops - Learn Swift
+
+### Ranges
 
 ```swift
 let zeroToThree = 0...3
@@ -248,6 +313,8 @@ while counter < stopNum {
 
 // The loop prints until the stop condition is met
 ```
+
+## Arrays and Sets - Learn Swift
 ## Array
 
 ```swift
@@ -477,6 +544,8 @@ if let redHex = primaryHex["red"] {
 // Prints: The hex code for red is #ff0000
 ```
 
+## Dictionaries - Learn Swift
+
 ## Dictionary
 ```swift
 var dictionaryName = [
@@ -632,6 +701,8 @@ for meaning in emojiMeaning.values {
 }
 ```
 
+## Functions - Learn Swift
+
 ## Function Declaration
 ```swift
 func washCar() -> Void {
@@ -771,6 +842,8 @@ determineSeason(monthNum: 4, season: &currentSeason)
 
 print(currentSeason) // Spring 🌱
 ```
+
+## Structures - Learn Swift
 ## Struct Creation
 
 ```swift
@@ -873,6 +946,7 @@ print(dinerMenu.menuItems)
 // Prints: ["Fries", "Burgers", "Toast"]
 ```
 
+## Classes - Learn Swift
 ## Swift Class
 
 ```swift
@@ -1014,7 +1088,7 @@ Unlike value types, reference types are not copied when they are assigned to a v
 
 https://www.codecademy.com/learn/learn-intermediate-swift/modules/swift-enumerations/cheatsheet
 
-## Enumerations
+## Enumerations - Learn Intermediate Swift
 ```swift
 enum Day {
   case monday
@@ -1124,7 +1198,7 @@ enum ShirtSize: String {
   }
 }
 ```
-
+## Optionals - Learn Intermediate Swift
 ## Optional Types
 
 ```swift
@@ -1216,7 +1290,7 @@ func getFirstInitial(from name: String?) -> String? {
   return name?.first
 }
 ```
-
+## Closures - Learn Intermediate Swift
 ## Defining a Closure
 ```swift
 let displayWelcome = { () -> Void in
@@ -1348,6 +1422,7 @@ printHello() // Prints: Hello! print count: 3
 printGoodbye() // Prints: Goodbye! print count: 2
 ```
 
+## Properties and Access Control - Learn Intermediate Swift
 ## Access Levels
 
 
