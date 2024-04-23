@@ -1,3 +1,7 @@
+[OOP](#oop)
+
+[Modules](#modules)
+
 # OOP
 
 ```nim

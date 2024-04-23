@@ -2,7 +2,6 @@ https://www.codecademy.com/learn/learn-java/modules/learn-java-hello-world/cheat
 # Table of Contents
 
 
-
 [Hello World](#hello-world)
 
 [Variables](#variables)
