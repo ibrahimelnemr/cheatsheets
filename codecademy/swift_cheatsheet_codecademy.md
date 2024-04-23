@@ -1,8 +1,8 @@
-[Learn Swift](#learn-swift)
+# [Learn Swift](#learn-swift-cheatsheet)
 
-[Learn Intermediate Swift](#learn-intermediate-swift)
+# [Learn Intermediate Swift](#learn-intermediate-swift-cheatsheet)
 
-# Learn Swift
+# Learn Swift Cheatsheet
 https://www.codecademy.com/learn/learn-swift/modules/learn-swift-hello-world/cheatsheet
 
 ```swift
@@ -1010,7 +1010,7 @@ Unlike value types, reference types are not copied when they are assigned to a v
 
 
 
-# Learn Intermediate Swift
+# Learn Intermediate Swift Cheatsheet
 
 https://www.codecademy.com/learn/learn-intermediate-swift/modules/swift-enumerations/cheatsheet
 

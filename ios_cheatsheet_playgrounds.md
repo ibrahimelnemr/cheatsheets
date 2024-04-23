@@ -1,60 +1,54 @@
 
-# [Playgrounds - Get Started with Apps](#playgrounds---get-started-with-apps)
+# [Playgrounds - Get Started with Apps](#playgrounds---get-started-with-apps---files)
 
-## [MyApp](#myapp-get-started-with-apps)
-## [ExperimentView](#experimentview-get-started-with-apps)
-## [IntroView](#introview-get-started-with-apps)
-## [FriendDetailView](#frienddetailview-get-started-with-apps)
+## [MyApp](#myapp---get-started-with-apps)
+## [ExperimentView](#experimentview---get-started-with-apps)
+## [IntroView](#introview---get-started-with-apps)
+## [FriendDetailView](#frienddetailview---get-started-with-apps)
 
 # [Playgrounds - Keep Going with Apps](#playgrounds---keep-going-with-apps)
+## [Modifying State](#modifying-state---keep-going-with-apps)
+## [Using a Conditional Modifier](#using-a-conditional-modifier---keep-going-with-apps)
+## [Built In Views](#built-in-views---keep-going-with-apps)
+## [Practice with Built in views](#practice-with-built-in-views---keep-going-with-apps)
 
-## [Modifying State](#modifying-state-keep-going-with-apps)
+## [Navigating in SwuiftUI](#navigating-in-swiftui---keep-going-with-apps)
+### [Navigation Experiment](#navigationexperiment---navigating-in-swiftui)
+### [NavigationSplitViewExperiment](#navigationsplitviewexperiment---navigating-in-swiftui)
+### [MyApp](#myapp---navigating-in-swiftui)
+### [ContentView](#contentview---navigating-in-swiftui)
 
-## [Using a Conditional Modifier](#using-a-conditional-modifier-keep-going-with-apps)
+## [Sharing Data Between Views](#sharing-data-between-views---keep-going-with-apps)
+## [Create a New View to Share Data](#create-a-new-view-to-share-data---keep-going-with-apps)
+## [Add and Delete Creatures](#add-and-delete-creatures---keep-going-with-apps)
+## [Add a CreatureDetail View](#add-a-creaturedetail-view---keep-going-with-apps)
+### [CreatureDetail](#creaturedetail---add-a-creaturedetail-view)
+### [ContentView](#contentview---add-a-creaturedetail-view)
 
-## [Built In Views](#built-in-views-keep-going-with-apps)
-
-## [Practice with Built in views](#practice-with-built-in-views-keep-going-with-apps)
-
-## [Navigating in SwuiftUI](#navigating-in-swiftui-keep-going-with-apps)
-
-## [Sharing Data Between Views](#sharing-data-between-views-keep-going-with-apps)
-
-## [Create a New View to Share Data](#create-a-new-view-to-share-data-keep-going-with-apps)
-
-## [Add and Delete Creatures](#add-and-delete-creatures-keep-going-with-apps)
-
-## [Add a CreatureDetail View](#creaturedetail-add-a-creaturedetail-view-keep-going-with-apps)
 
 # [Playgrounds - Keep Going with Apps (files)](#playgrounds-keep-going-with-apps-files)
-
-## [Bindings](#bindings---playgrounds-keep-going-with-apps---files)
-## [ConditionalCircle](#conditionalcircle---playgrounds-keep-going-with-apps---files)
-## [ConditionalViews](#conditionalviews---playgrounds-keep-going-with-apps---files)
-## [ContentView](#contentview---playgrounds-keep-going-with-apps---files)
-## [CreatureDetail](#creaturedetail---playgrounds-keep-going-with-apps---files)
-## [CreatureEditor](#creatureeditor---playgrounds-keep-going-with-apps---files)
-## [CreatureRow](#creaturerow---playgrounds-keep-going-with-apps---files)
-## [CreatureZoo](#creaturezoo---playgrounds-keep-going-with-apps---files)
-## [CreatureZooExtension](#creaturezooextension---playgrounds-keep-going-with-apps---files)
-## [DancingCreatures](#dancingcreatures---playgrounds-keep-going-with-apps---files)
-## [MyApp](#myapp---playgrounds-keep-going-with-apps---files)
-## [NavigationExperiment](#navigationexperiment---playgrounds-keep-going-with-apps---files)
-## [NavigationSplitViewExperiment](#navigationsplitviewexperiment---playgrounds-keep-going-with-apps---files)
-## [ResizableFont](#resizablefont---playgrounds-keep-going-with-apps---files)
-## [SlidingRectangle](#slidingrectangle---playgrounds-keep-going-with-apps---files)
-## [StoryEditor](#storyeditor---playgrounds-keep-going-with-apps---files)
-## [TestView](#testview---playgrounds-keep-going-with-apps---files)
-
-# Resources
-
-https://github.com/SimpleBoilerplates/SwiftUI-Cheat-Sheet
+## [Bindings](#bindings---keep-going-with-apps)
+## [ConditionalCircle](#conditionalcircle---keep-going-with-apps)
+## [ConditionalViews](#conditionalviews---keep-going-with-apps)
+## [ContentView](#contentview---keep-going-with-apps)
+## [CreatureDetail](#creaturedetail---keep-going-with-apps)
+## [CreatureEditor](#creatureeditor---keep-going-with-apps)
+## [CreatureRow](#creaturerow---keep-going-with-apps)
+## [CreatureZoo](#creaturezoo---keep-going-with-apps)
+## [CreatureZooExtension](#creaturezooextension---keep-going-with-apps)
+## [DancingCreatures](#dancingcreatures---keep-going-with-apps)
+## [MyApp](#myapp---keep-going-with-apps)
+## [NavigationExperiment](#navigationexperiment---keep-going-with-apps)
+## [NavigationSplitViewExperiment](#navigationsplitviewexperiment---keep-going-with-apps)
+## [ResizableFont](#resizablefont---keep-going-with-apps)
+## [SlidingRectangle](#slidingrectangle---keep-going-with-apps)
+## [StoryEditor](#storyeditor---keep-going-with-apps)
+## [TestView](#testview---keep-going-with-apps)
 
 
+# Playgrounds - Get Started with Apps - Files
 
-# Playgrounds - Get Started with Apps
-
-## IntroView Get Started with Apps
+## IntroView - Get Started with Apps
 
 ```swift
 import SwiftUI
@@ -80,7 +74,8 @@ struct IntroView_Previews: PreviewProvider {
     }
 }
 ```
-### ExperimentView Get Started with Apps
+
+## ExperimentView - Get Started with Apps
 ```swift 
 import SwiftUI
 
@@ -117,7 +112,7 @@ struct ExperimentView_Previews: PreviewProvider {
 }
 ```
 
-### FriendDetailView Get Started with Apps
+## FriendDetailView - Get Started with Apps
 
 ```swift
 import SwiftUI
@@ -150,7 +145,7 @@ struct FriendDetailView_Previews: PreviewProvider {
     }
 }
 ```
-### MyApp Get Started with Apps
+## MyApp - Get Started with Apps
 ```swift
 import SwiftUI
 import Guide
@@ -168,10 +163,9 @@ struct MyApp: App {
 
 # Playgrounds - Keep Going with Apps
 
-## Modifying State Keep Going with Apps
+## Modifying State - Keep Going with Apps
 ```swift
 import SwiftUI
-//#-learning-code-snippet(conditionalViews)
 
 struct ConditionalViews: View {
     
@@ -219,13 +213,9 @@ struct ConditionalViews_Previews: PreviewProvider {
     }
 }
 
-
-
-
-
 ```
 
-## Using a Conditional Modifier Keep Going with Apps
+## Using a Conditional Modifier - Keep Going with Apps
 
 ```swift
 import SwiftUI
@@ -250,7 +240,7 @@ struct ConditionalCircle: View {
 }
 ```
 
-## Built In Views Keep Going with Apps
+## Built In Views - Keep Going with Apps
 
 ```swift
 import SwiftUI
@@ -282,7 +272,7 @@ struct Bindings: View {
 }
 ```
 
-## Practice with Built in views Keep Going with Apps
+## Practice with Built in Views - Keep Going with Apps
 
 ```swift
 import SwiftUI
@@ -332,9 +322,9 @@ struct SlidingRectangle: View {
 }
 ```
 
-## Navigating in SwiftUI Keep Going with Apps
+## Navigating in SwiftUI - Keep Going with Apps
 
-### NavigationExperiment Keep Going with Apps Navigating in SwiftUI
+### NavigationExperiment - Navigating in SwiftUI
 
 ```swift
 import SwiftUI
@@ -363,7 +353,7 @@ struct NavigationExperiment_Previews: PreviewProvider {
 ```
 
 
-### NavigationSplitViewExperiment Keep Going with Apps Navigating in SwiftUI
+### NavigationSplitViewExperiment - Navigating in SwiftUI
 
 ```swift
 import SwiftUI
@@ -406,7 +396,7 @@ struct NavigationSplitViewExperiment_Previews: PreviewProvider {
     }
 }
 ```
-### MyApp Keep Going with Apps Navigating in SwiftUI
+### MyApp - Navigating in SwiftUI
 
 ```swift
 import SwiftUI
@@ -427,7 +417,7 @@ struct MyApp: App {
 }
 ```
 
-### ContentView Keep Going with Apps Navigating in SwiftUI
+### ContentView - Navigating in SwiftUI
 
 ```swift
 import SwiftUI
@@ -455,9 +445,9 @@ struct ContentView: View {
 
 
 ```
-## Sharing Data Between Views Keep Going with Apps
+## Sharing Data Between Views - Keep Going with Apps
 
-### CreatureZoo Keep Going with Apps Sharing Data Between Views
+### CreatureZoo - Sharing Data Between Views
 
 ```swift
 import SwiftUI
@@ -483,7 +473,7 @@ struct Creature : Identifiable {
 }
 ```
 
-### ContentView Keep Going with Apps Sharing Data Between Views
+### ContentView - Sharing Data Between Views
 ```swift
 import SwiftUI
 import Guide
@@ -526,7 +516,7 @@ struct ContentView: View {
 
 
 ```
-### MyApp Keep Going with Apps Sharing Data Between Views
+### MyApp - Sharing Data Between Views
 
 ```swift
 import SwiftUI
@@ -549,9 +539,9 @@ struct MyApp: App {
 
 ```
 
-## Create a New View to Share data Keep Going with Apps
+## Create a New View to Share Data - Keep Going with Apps
 
-### DancingCreatures Keep Going with Apps Create a New View to Share data
+### DancingCreatures - Create a New View to Share data
 ```swift
 import SwiftUI
 import Guide
@@ -590,9 +580,9 @@ struct DancingCreatures_Previews: PreviewProvider {
 ```
 
 
-## Add and delete creatures Keep Going with Apps
+## Add and Delete Creatures - Keep Going with Apps
 
-### CreatureEditor Add and delete creatures Keep Going with Apps
+### CreatureEditor - Add and Delete Creatures
 ```swift
 import SwiftUI
 import Guide
@@ -642,7 +632,7 @@ struct CreatureEditor_Previews: PreviewProvider {
 }
 ```
 
-### ContentView Add and delete creatures Keep Going with Apps
+### ContentView - Add and delete creatures
 
 ```swift
 import SwiftUI
@@ -704,10 +694,10 @@ struct ContentView: View {
 }
 ```
 
-## Add a CreatureDetail view
+## Add a CreatureDetail View - Keep Going with Apps
 
 
-### CreatureDetail Add a CreatureDetail view Keep Going with Apps
+### CreatureDetail - Add a CreatureDetail View
 
 ```swift
 import SwiftUI
@@ -754,7 +744,7 @@ struct CreatureDetail_Previews: PreviewProvider {
 
 ```
 
-### ContentView Add a CreatureDetail view Keep Going with Apps
+### ContentView - Add a CreatureDetail View
 
 ```swift
 import SwiftUI
@@ -820,7 +810,7 @@ struct ContentView: View {
 
 # Playgrounds Keep Going with Apps (files)
 
-## Bindings - Playgrounds Keep Going with Apps - Files
+## Bindings - Keep Going with Apps
 
 ```swift
 import SwiftUI
@@ -856,7 +846,7 @@ struct Bindings_Previews: PreviewProvider {
 
 ```
 
-## ConditionalCircle - Playgrounds Keep Going with Apps - Files
+## ConditionalCircle - Keep Going with Apps
 
 ```swift
 import SwiftUI
@@ -888,7 +878,7 @@ struct SwiftUIView_Previews: PreviewProvider {
 
 ```
 
-## ConditionalViews - Playgrounds Keep Going with Apps - Files
+## ConditionalViews - Keep Going with Apps
 
 ```swift
 import SwiftUI
@@ -939,7 +929,7 @@ struct ConditionalViews_Previews: PreviewProvider {
 
 ```
 
-## ContentView - Playgrounds Keep Going with Apps - Files
+## ContentView - Keep Going with Apps
 
 ```swift
 import SwiftUI
@@ -1002,7 +992,7 @@ struct ContentView: View {
 
 ```
 
-## CreatureDetail - Playgrounds Keep Going with Apps - Files
+## CreatureDetail - Keep Going with Apps
 
 ```swift
 import SwiftUI
@@ -1045,11 +1035,9 @@ struct CreatureDetail_Previews: PreviewProvider {
         CreatureDetail(creature: CreatureZoo().creatures.randomElement() ?? Creature(name: "Panda", emoji: "🐼")).assess()
     }
 }
-
-
 ```
 
-## CreatureEditor - Playgrounds Keep Going with Apps - Files
+## CreatureEditor - Keep Going with Apps
 
 ```swift
 import SwiftUI
@@ -1102,7 +1090,7 @@ struct CreatureEditor_Previews: PreviewProvider {
 
 ```
 
-## CreatureRow - Playgrounds Keep Going with Apps - Files
+## CreatureRow - Keep Going with Apps
 
 ```swift
 import SwiftUI
@@ -1134,7 +1122,7 @@ struct CreatureRow_Previews: PreviewProvider {
 
 ```
 
-## CreatureZoo - Playgrounds Keep Going with Apps - Files
+## CreatureZoo - Keep Going with Apps
 
 ```swift
 import SwiftUI
@@ -1160,7 +1148,7 @@ struct Creature : Identifiable {
 
 ```
 
-## CreatureZooExtension - Playgrounds Keep Going with Apps - Files
+## CreatureZooExtension - Keep Going with Apps
 
 ```swift
 import SwiftUI
@@ -1190,7 +1178,7 @@ extension CreatureZoo {
 
 ```
 
-## DancingCreatures - Playgrounds Keep Going with Apps - Files
+## DancingCreatures - Keep Going with Apps
 
 ```swift
 import SwiftUI
@@ -1230,7 +1218,7 @@ struct DancingCreatures_Previews: PreviewProvider {
 
 ```
 
-## MyApp - Playgrounds Keep Going with Apps - Files
+## MyApp - Keep Going with Apps
 
 ```swift
 import SwiftUI
@@ -1253,7 +1241,7 @@ struct MyApp: App {
 
 ```
 
-## NavigationExperiment - Playgrounds Keep Going with Apps - Files
+## NavigationExperiment - Keep Going with Apps
 
 ```swift
 import SwiftUI
@@ -1282,7 +1270,7 @@ struct NavigationExperiment_Previews: PreviewProvider {
 
 ```
 
-## NavigationSplitViewExperiment - Playgrounds Keep Going with Apps - Files
+## NavigationSplitViewExperiment - Keep Going with Apps
 
 ```swift
 import SwiftUI
@@ -1327,7 +1315,7 @@ struct NavigationSplitViewExperiment_Previews: PreviewProvider {
 
 ```
 
-## ResizableFont - Playgrounds Keep Going with Apps - Files
+## ResizableFont - Keep Going with Apps
 
 ```swift
 import SwiftUI
@@ -1351,7 +1339,7 @@ struct FlexibleFontModifier: ViewModifier {
 
 ```
 
-## SlidingRectangle - Playgrounds Keep Going with Apps - Files
+## SlidingRectangle - Keep Going with Apps
 
 ```swift
 import SwiftUI
@@ -1379,7 +1367,7 @@ struct SlidingRectangle_Previews: PreviewProvider {
 
 ```
 
-## StoryEditor - Playgrounds Keep Going with Apps - Files
+## StoryEditor - Keep Going with Apps
 
 ```swift
 import SwiftUI
@@ -1410,7 +1398,7 @@ struct StoryEditor_Previews: PreviewProvider {
 
 ```
 
-## TestView - Playgrounds Keep Going with Apps - Files
+## TestView - Keep Going with Apps
 
 ```swift
 
