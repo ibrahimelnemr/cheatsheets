@@ -21,14 +21,13 @@
 # Variable Declaration
 ```java
 // Variable Declaration
-// Declaring variables in various data types (int, float, string, boolean)
-int my_integer = 10;
-float my_float = 3.14f;
-String my_string = "Hello, World!";
-boolean my_boolean = true;
+int myInteger = 10;
+float myFloat = 3.14f;
+String myString = "Hello, World!";
+boolean myBoolean = true;
 
 // Assigning values to variables
-int my_variable = 42;
+int myVariable = 42;
 
 // Initializing variables
 int x = 5;
@@ -40,28 +39,6 @@ int a = 5, b = 10, c = 15;
 // Using constants
 final double PI = 3.14159;
 final double GRAVITY = 9.8;
-
-// Variable scope (local vs global)
-int global_var = 10;
-
-void my_function() {
-    int local_var = 20;
-    System.out.println(global_var);  // Accessing global variable
-    System.out.println(local_var);   // Accessing local variable
-}
-
-// Variable naming conventions
-String my_variable_name = "Java";
-String snake_case = "Preferred naming convention";
-String camelCase = "Not preferred";
-
-// Implicit vs explicit declaration
-int my_variable = 10;  // Implicit declaration
-int my_variable = 10;  // Explicit declaration
-
-// Type inference if statically typed
-int my_variable = 10;  // Inferred as int
-float my_variable = 3.14f;  // Inferred as float
 ```
 
 # Printing Output
@@ -226,8 +203,6 @@ int[] combinedArray = new int[myArray.length + newArray.length];
 System.arraycopy(myArray, 0, combinedArray, 0, myArray.length);
 System.arraycopy(newArray, 0, combinedArray, myArray.length, newArray.length);
 
-// List/array comprehension
-// Java does not have list/array comprehension like Python
 
 // Sorting lists/arrays
 Arrays.sort(myArray);
@@ -274,8 +249,6 @@ myMap.put("key3", "value3");
 // Checking for key existence
 System.out.println(myMap.containsKey("key1"));
 
-// Dictionary/map comprehension
-// Java does not have dictionary/map comprehension like Python
 
 // Iterating over keys
 for (String key : myMap.keySet()) {
@@ -292,8 +265,6 @@ for (String key : myMap.keySet()) {
     System.out.println(key + ": " + myMap.get(key));
 }
 
-// Sorting dictionaries/maps
-// Java HashMap does not guarantee order
 ```
 
 # Sets
@@ -332,9 +303,6 @@ differenceSet.removeAll(set2);
 HashSet<Integer> symmetricDifferenceSet = new HashSet<>(set1);
 symmetricDifferenceSet.addAll(set2);
 symmetricDifferenceSet.removeAll(intersectionSet);
-
-// Set comprehension
-// Java does not have set comprehension like Python
 
 // Converting lists/arrays to sets and vice versa
 HashSet<Integer> setFromList = new HashSet<>(Arrays.asList(1, 2, 3));
@@ -418,12 +386,6 @@ int add(int x, int y) {
     return x + y;
 }
 
-// Function overloading (if supported)
-// Java does not support function overloading like some other languages
-
-// Lambda functions
-// Java does not have lambda functions like Python
-
 // Recursion
 int factorial(int n) {
     if (n == 0) {
@@ -433,11 +395,6 @@ int factorial(int n) {
     }
 }
 
-// Generators and iterators
-// Java does not have generators and iterators like Python
-
-// Decorators
-// Java does not have decorators like Python
 
 // Higher-order functions
 void myFunction(Runnable func) {
