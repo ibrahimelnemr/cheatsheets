@@ -1,3 +1,24 @@
+[Variable Declaration](#variable-declaration)
+
+[Printing Output](#printing-output)
+
+[String Methods](#string-methods)
+
+[Conditional Statements & Control Flow & Loops](#conditional-statements--control-flow--loops)
+
+[Lists / Arrays](#lists--arrays)
+
+[Dictionaries / Maps](#dictionaries--maps)
+
+[Sets](#sets)
+
+[Exceptions & try / catch](#exceptions--try--catch)
+
+[Functions](#functions)
+
+[OOP](#oop)
+
+# Variable Declaration
 ```java
 // Variable Declaration
 // Declaring variables in various data types (int, float, string, boolean)
@@ -43,6 +64,7 @@ int my_variable = 10;  // Inferred as int
 float my_variable = 3.14f;  // Inferred as float
 ```
 
+# Printing Output
 ```java
 // Printing Output
 // Printing a single variable
@@ -61,6 +83,7 @@ System.out.printf("Hello, %s! You are %d years old.%n", name, age);
 System.out.println("This is a new line.\nThis is a tab:\t.");
 ```
 
+# String Methods
 ```java
 // String methods
 // String concatenation
@@ -119,6 +142,7 @@ while (matcher.find()) {
 }
 ```
 
+# Conditional Statements & Control Flow & Loops
 ```java
 // Conditional statements & Control flow & Loops
 // if / else statements
@@ -179,6 +203,7 @@ while (true) {
 }
 ```
 
+# Lists / Arrays
 ```java
 // Lists / Arrays
 // Creating lists/arrays
@@ -231,6 +256,8 @@ for (int i = 0; i < myArray.length; i++) {
 myArray = tempArray;
 ```
 
+# Dictionaries / Maps
+
 ```java
 // Dictionaries / Maps
 // Creating dictionaries/maps
@@ -269,6 +296,7 @@ for (String key : myMap.keySet()) {
 // Java HashMap does not guarantee order
 ```
 
+# Sets
 ```java
 // Sets
 // Creating sets
@@ -330,6 +358,7 @@ if (mySet.containsAll(superset)) {
 }
 ```
 
+# Exceptions & try / catch
 ```java
 // Exceptions / try/catch
 // Handling exceptions with try/catch blocks
@@ -371,6 +400,7 @@ try {
 }
 ```
 
+# Functions
 ```java
 // Functions
 // Defining functions
@@ -433,6 +463,7 @@ int add(int x, int y) {
 }
 ```
 
+# OOP
 ```java
 // OOP
 // Class creation syntax
