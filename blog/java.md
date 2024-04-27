@@ -287,21 +287,33 @@ if (mySet.contains(2)) {
 
 // Set operations (union, intersection, difference, symmetric difference)
 HashSet<Integer> set1 = new HashSet<>();
+
 set1.add(1);
 set1.add(2);
 set1.add(3);
+
 HashSet<Integer> set2 = new HashSet<>();
+
 set2.add(3);
 set2.add(4);
 set2.add(5);
+
 HashSet<Integer> unionSet = new HashSet<>(set1);
+
 unionSet.addAll(set2);
+
 HashSet<Integer> intersectionSet = new HashSet<>(set1);
+
 intersectionSet.retainAll(set2);
+
 HashSet<Integer> differenceSet = new HashSet<>(set1);
+
 differenceSet.removeAll(set2);
+
 HashSet<Integer> symmetricDifferenceSet = new HashSet<>(set1);
+
 symmetricDifferenceSet.addAll(set2);
+
 symmetricDifferenceSet.removeAll(intersectionSet);
 
 // Converting lists/arrays to sets and vice versa
@@ -315,12 +327,16 @@ for (int item : mySet) {
 
 // Checking for subsets and supersets
 HashSet<Integer> subset = new HashSet<>();
+
 subset.add(1);
 subset.add(2);
+
 if (subset.containsAll(mySet)) {
     System.out.println("Subset found");
 }
+
 HashSet<Integer> superset = new HashSet<>(Arrays.asList(1, 2, 3));
+
 if (mySet.containsAll(superset)) {
     System.out.println("Superset found");
 }
